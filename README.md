@@ -6,7 +6,7 @@ The number of rounds played is recorded in the `history.txt` file. When a round 
 
 This project exists as preparation for a foray into Android App development. I wanted to become more familiar with the Java language and used this Wordle CLI as a springboard project into the world of programming in Java.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/5PykKpxeDNk)
 
 # Development Environment
 
