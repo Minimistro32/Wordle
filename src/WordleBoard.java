@@ -9,6 +9,8 @@ public class WordleBoard {
     private LangDict wordBank;
 
     // INIT OVERLOADS
+    // The filePath (String) should point to a txt containing words for the
+    // WordleBoard. Size (int) and wordlength (int) allow for various size boards.
     public WordleBoard(String filePath, int size, int wordLength) throws IOException {
         this.rowCount = size;
         this.colCount = wordLength;
@@ -50,7 +52,7 @@ public class WordleBoard {
     public final String getAnswer() {
         return answer;
     }
-    
+
     public boolean isGameOver() {
         return didWin() || countGuesses() == height();
     }
@@ -58,7 +60,7 @@ public class WordleBoard {
     public boolean didWin() {
         return guesses.contains(getAnswer());
     }
-    
+
     // MUTATOR
     public void guess(String str) {
         if (str.length() == width() && wordBank.contains(str)) {
@@ -66,5 +68,3 @@ public class WordleBoard {
         }
     }
 }
-
-
